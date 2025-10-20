@@ -1,0 +1,30 @@
+
+body {
+  background-color: black;
+  color: #fff;
+}
+
+nav {
+  padding: 0 112px 0 112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  display: inline;
+  margin-right: 15px;
+  color: #060606;
+}
+
+span {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
