@@ -27,7 +27,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #000;
-  z-index: 9999; /* garante que o nav fique acima de overlays e conteúdo subsequente */
+  z-index: 9999;
 }
 
 nav > span {
@@ -36,6 +36,7 @@ nav > span {
 }
 
 li {
+  text-transform: uppercase;
   display: inline;
   margin-right: 15px;
   color: #ae209d;
@@ -43,12 +44,18 @@ li {
 }
 
 #inicio {
-  background-image: url('../images/bg_hero_1.webp');
+  background-image: linear-gradient(rgba(202, 3, 179, 0.55), rgba(173, 30, 157, 0.55)), url('../images/bg_hero_1.webp');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
+#projetos {
+  background-image: linear-gradient(rgba(202, 3, 179, 0.55), rgba(173, 30, 157, 0.55)), url('../images/bg_projetos.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 #inicio {
   position: relative;
   color: #fff;
@@ -58,7 +65,15 @@ li {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(174, 32, 157, 0.6);
+  background-color: rgba(41, 4, 37, 0.6);
+  z-index: 0;
+}
+
+#projetos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(41, 4, 37, 0.6);
   z-index: 0;
 }
 
