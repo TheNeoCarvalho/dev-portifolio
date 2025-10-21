@@ -27,6 +27,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #000;
+  z-index: 9999; /* garante que o nav fique acima de overlays e conteúdo subsequente */
 }
 
 nav > span {
@@ -39,6 +40,35 @@ li {
   margin-right: 15px;
   color: #ae209d;
   font-weight: 700;
+}
+
+#inicio {
+  background-image: url('../images/bg_hero_1.webp');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#inicio {
+  position: relative;
+  color: #fff;
+}
+
+#inicio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(174, 32, 157, 0.6);
+  z-index: 0;
+}
+
+#inicio > * {
+  position: relative;
+  z-index: 1;
+}
+
+#inicio h1 span {
+  color: #fff;
 }
 
 section {
@@ -176,4 +206,24 @@ button {
   flex-direction: row;
   gap: 32px;
   align-items: flex-start;
+}
+
+footer {
+  width: 100%;
+  padding: 32px 112px 32px 112px;
+  background-color: #ae209d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span {
+  text-align: center;
+  font-size: 16px;
+  color: #a1a1aa;
+}
+
+footer span a {
+  color: #fff;
+  font-weight: bold;
 }
