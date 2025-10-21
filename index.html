@@ -12,18 +12,86 @@
     <nav>
         <span>&lt;Manoel Carvalho/&gt;</span>
         <menu>
-            <li>Sobre</li>
-            <li>Projetos</li>
-            <li>Contato</li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </menu>
     </nav>
-    <section>
-        <h1><span>Desenvolvedor de </span><span style="color: #ae209d;">Software</span></h1>
+    <section id="inicio" style="background-color: #ae209d;">
+        <h1>
+            <span>Desenvolvedor
+                <span style="text-transform: lowercase;">de</span>
+            </span>
+            <span style="color: #ffffff;">Software</span>
+        </h1>
         <span>Transformando ideias em experiências digitais elegantes e funcionais.</span>
-        <div>
-            <button>Entre em contato</button>
+        <div style="flex-direction: row; justify-content: center; align-items: center;">
+            <a href="https://wa.me/5588999689957?text=Gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20um%20sistema.%20Pode%20me%20ajudar%3F" target="_blank">Entre em contato</a>
             <span>Ver projetos &rarr;</span>
         </div>
+    </section>
+    <section id="sobre" style="background-color: #000; flex-direction: row;">
+        <img src="./images/eu.jpeg" alt="">
+        <div >
+            <h3>Sobre mim</h3>
+            <span>
+                Sou um desenvolvedor apaixonado por tecnologia e design, com experiência na criação de aplicações web robustas e escaláveis. Meu objetivo é sempre encontrar a solução mais eficiente e elegante para cada desafio, combinando código limpo com interfaces intuitivas. Estou constantemente aprendendo e explorando novas tecnologias para aprimorar minhas habilidades.
+            </span>
+            <h3>Minhas habilidades</h3>
+            <ul>
+                <li>TypeScript</li>
+                <li>Reactjs</li>
+                <li>Nodejs</li>
+                <li>Next.js</li>
+                <li>Tailwind CSS</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projetos" style="background-color: #ae209d;">
+        <h3>Projetos em destaque</h3>
+        <span>Uma seleção de trabalhos que demonstram minhas habilidades.</span>
+        <div class="projetos">
+            <div>
+                <img src="images/project_1.png" alt="">
+                <h4>Plataforma de Análise de Dados</h4>
+                <span>Uma plataforma SaaS completa para visualização e análise de dados de negócios, com dashboards interativos e relatórios customizáveis.</span>
+            </div>
+
+            <div>
+                <img src="images/project_2.png" alt="">
+                <h4>Loja Virtual Minimalista</h4>
+                <span>Um e-commerce com design focado na experiência do usuário, apresentando produtos de forma clara e com um processo de checkout simplificado.</span>
+            </div>
+
+            <div>
+                <img src="images/project_3.png" alt="">
+                <h4>App de Gerenciamento de Tarefas</h4>
+                <span>Aplicativo móvel multiplataforma para ajudar usuários a organizar suas tarefas diárias com uma interface intuitiva e sincronização em tempo real.</span>
+            </div>
+        </div>
+
+    </section>
+    <section id="contato" style="background-color: #000;">
+        <h3>Vamos trabalhar juntos!</h3>
+        <span>Estou aberto a novas oportunidades e projetos. Entre em contato para discutirmos como posso ajudar a transformar suas ideias em realidade.</span>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.253885214428!2d-39.06143372451408!3d-6.615346864669314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a3a0a5280a4f35%3A0xda5130d79690f130!2sAv.%20Pedro%20Lopes%20Vieira%2C%201310%20-%20Pega%20Avoante%2C%20Cedro%20-%20CE%2C%2063400-000!5e0!3m2!1spt-BR!2sbr!4v1761061343225!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="">
+                <span style="font-size: 24px; color: #ae209d">Localização</span>
+                <span>Cedro, Ceará, Brasil</span>
+                <span>Endereço: Rua Exemplo, 123</span>
+                <span>CEP: 12345-678</span>
+                <span>Estado: Ceará</span>
+<hr>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu email" required>
+                <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </div>
+
     </section>
 </body>
 
