@@ -12,8 +12,6 @@ A página foi desenvolvida pensando em clareza visual e prática didática para 
 
 - HTML5
 - CSS3
-- Imagens (WebP / PNG / JPG)
-- Nenhuma dependência ou build system — página estática
 
 ## Como executar
 
@@ -26,7 +24,7 @@ Método via servidor local (recomendado para evitar restrições com iframes ou 
 - Usando Python (se tiver o Python instalado):
 
 ```powershell
-cd "c:\Users\allex\Documents\Dev\dev-portifolio"
+cd "/dev-portifolio"
 python -m http.server 8000
 ```
 
@@ -47,44 +45,6 @@ Em seguida abra no navegador: `http://localhost:8000`
 - Sobre (`#sobre`): Foto e descrição pessoal / habilidades.
 - Projetos (`#projetos`): Cards com imagens e descrições de projetos de exemplo.
 - Contato (`#contato`): Iframe do Google Maps e formulário de contato (apenas front-end; sem envio backend).
-
-## Como personalizar a imagem e a cor de overlay da seção Início
-
-Abra `css/style.css` e procure pelo seletor `#inicio` e `#inicio::before`.
-
-- Para trocar a imagem de fundo, altere:
-
-```css
-#inicio {
-  background-image: url('../images/bg_hero_1.webp');
-}
-```
-
-Substitua pelo caminho da sua imagem, por exemplo: `url('../images/minha_imagem.jpg')`.
-
-- Para alterar a cor e a opacidade do overlay, ajuste `background-color` no pseudo-elemento:
-
-```css
-#inicio::before {
-  background-color: rgba(174, 32, 157, 0.6); /* R, G, B, opacidade */
-}
-```
-
-Aumente ou diminua o último valor (0.0 a 1.0) para alterar a transparência.
-
-Alternativa sem pseudo-elemento (usando gradiente):
-
-```css
-#inicio {
-  background-image: linear-gradient(rgba(174,32,157,0.55), rgba(174,32,157,0.55)), url('../images/bg_hero_1.webp');
-}
-```
-
-## Observações e boas práticas
-
-- `background-attachment: fixed;` pode causar comportamento estranho em dispositivos móveis. Se notar problemas em celulares, remova essa propriedade ou use media queries.
-- O `nav` foi definido com `position: fixed` e `z-index` para garantir que fique acima do overlay. Se for preciso, ajuste `padding` e `z-index` em `css/style.css` para adequar ao seu layout.
-- O formulário de contato não possui backend — para torná-lo funcional, conecte a um servidor ou use um serviço de terceiros (Formspree, Netlify Forms, etc.).
 
 ## Contribuições
 
